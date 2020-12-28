@@ -1,0 +1,7 @@
+1. Unpack groovy-binary-«version».zip somewhere
+2. set `GROOVY_HOME` environment variable to unpacked location
+3. Put `$GROOVY_HOME/bin` on `PATH`
+4. Execute `groovy -h` (scan the options)
+5. Execute `groovy -e "println 'Hello World' "`
+6. Run `groovyConsole`
+7. Check out the online version @ http://groovyconsole.appspot.com/

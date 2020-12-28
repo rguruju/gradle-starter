@@ -1,0 +1,5 @@
+1. Copy `gradle-x-all.zip` to your disk and extract it.
+2. Set environment variable `GRADLE_HOME` to the extracted directory.
+3. Prepend `GRADLE_HOME/bin` to the `PATH` environment variable.
+5. Open a terminal and execute `gradle -v`.
+6. Check out `http://gradle.org/downloads`.

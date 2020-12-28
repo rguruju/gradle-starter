@@ -1,0 +1,5 @@
+1. Open the Groovy Console (hint: execute `groovyConsole`)
+2. Explore the menus
+3. Run `println "Hello World!"`
+4. Clear the output, and run it again
+
