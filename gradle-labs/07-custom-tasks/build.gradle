@@ -1,0 +1,41 @@
+/*
+    1. Write a custom task class of type `Greeting`. 
+		- Add a property `greeting` for the greeting text. 
+		- Assign a default value to it.
+        - The task action should print the greeting text property. 
+		- Add two tasks to your build script, both of type `Greeting`.
+        - One should assign a custom value to the greeting property. 
+		- Execute both tasks.
+       
+    2. Is there an alternative to using an annotation for adding a task action to a custom task?
+*/
+
+class Greeting extends DefaultTask {
+	String greeting = "hello"
+	
+	Greeting() {
+		this.doLast {
+			println greeting
+		}
+	}
+	
+	@TaskAction
+	void doAll() {
+		sayGreeting()
+		somethingelse()
+	}
+	
+	void sayGreeting() {
+		println greeting
+	}
+	
+	void somethingelse() {
+		println "something"
+	}
+}
+
+task hello(type: Greeting)
+
+task world(type: Greeting) {
+	greeting = "world"
+}

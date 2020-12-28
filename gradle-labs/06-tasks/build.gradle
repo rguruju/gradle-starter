@@ -1,0 +1,27 @@
+/*
+    1. Add a `hello` task that prints 'hello world'.
+    2. Execute this task.
+    3. Add a `date` task that prints out the current date.
+    4. Execute this task.
+	  5. Execute `gradle tasks`
+    6. Add meaningful descriptions to the tasks.
+		   Hint: http://www.gradle.org/docs/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:description
+	  7. Run `gradle tasks` again.
+
+    8. (Optional) Use SimpleDateFormat to format the date.
+*/
+import java.text.SimpleDateFormat
+
+task hello {
+	description = "prints hello"
+	doLast {
+		println "hello world"
+	}
+}
+
+task date {
+	description = "prints date"
+	doLast {
+		println new SimpleDateFormat("MM/yy").format(new Date())
+	}
+}
